@@ -31,6 +31,7 @@ class TabBarViewController: UITabBarController {
         
         
         tabBar.tintColor = UIColor(named: "blue")
+        tabBar.unselectedItemTintColor = .secondaryLabel
         tabBar.barTintColor = .red
         
         
