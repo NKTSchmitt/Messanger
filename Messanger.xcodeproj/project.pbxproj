@@ -9,17 +9,23 @@
 /* Begin PBXBuildFile section */
 		EDBAB86127D2415D00CF53AC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDBAB86027D2415D00CF53AC /* AppDelegate.swift */; };
 		EDBAB86327D2415D00CF53AC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDBAB86227D2415D00CF53AC /* SceneDelegate.swift */; };
-		EDBAB86527D2415D00CF53AC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDBAB86427D2415D00CF53AC /* ViewController.swift */; };
 		EDBAB86A27D2415E00CF53AC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EDBAB86927D2415E00CF53AC /* Assets.xcassets */; };
+		EDBAB87C27D2437300CF53AC /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDBAB87B27D2437300CF53AC /* TabBarViewController.swift */; };
+		EDBAB87E27D2438B00CF53AC /* ChatsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDBAB87D27D2438B00CF53AC /* ChatsViewController.swift */; };
+		EDBAB88027D2439200CF53AC /* FriendsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDBAB87F27D2439200CF53AC /* FriendsViewController.swift */; };
+		EDBAB88227D2439D00CF53AC /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDBAB88127D2439D00CF53AC /* SettingsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		EDBAB85D27D2415D00CF53AC /* Messanger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Messanger.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDBAB86027D2415D00CF53AC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EDBAB86227D2415D00CF53AC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		EDBAB86427D2415D00CF53AC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		EDBAB86927D2415E00CF53AC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EDBAB86E27D2415E00CF53AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EDBAB87B27D2437300CF53AC /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		EDBAB87D27D2438B00CF53AC /* ChatsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatsViewController.swift; sourceTree = "<group>"; };
+		EDBAB87F27D2439200CF53AC /* FriendsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsViewController.swift; sourceTree = "<group>"; };
+		EDBAB88127D2439D00CF53AC /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,7 +63,6 @@
 				EDBAB87627D242A400CF53AC /* Models */,
 				EDBAB87527D2429E00CF53AC /* Views */,
 				EDBAB87427D2428F00CF53AC /* Controllers */,
-				EDBAB86927D2415E00CF53AC /* Assets.xcassets */,
 				EDBAB86E27D2415E00CF53AC /* Info.plist */,
 			);
 			path = Messanger;
@@ -96,6 +101,7 @@
 		EDBAB87827D242AD00CF53AC /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				EDBAB86927D2415E00CF53AC /* Assets.xcassets */,
 				EDBAB86027D2415D00CF53AC /* AppDelegate.swift */,
 				EDBAB86227D2415D00CF53AC /* SceneDelegate.swift */,
 			);
@@ -105,7 +111,10 @@
 		EDBAB87927D242BC00CF53AC /* Core */ = {
 			isa = PBXGroup;
 			children = (
-				EDBAB86427D2415D00CF53AC /* ViewController.swift */,
+				EDBAB87B27D2437300CF53AC /* TabBarViewController.swift */,
+				EDBAB87D27D2438B00CF53AC /* ChatsViewController.swift */,
+				EDBAB87F27D2439200CF53AC /* FriendsViewController.swift */,
+				EDBAB88127D2439D00CF53AC /* SettingsViewController.swift */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -186,9 +195,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EDBAB86527D2415D00CF53AC /* ViewController.swift in Sources */,
 				EDBAB86127D2415D00CF53AC /* AppDelegate.swift in Sources */,
+				EDBAB88027D2439200CF53AC /* FriendsViewController.swift in Sources */,
+				EDBAB87C27D2437300CF53AC /* TabBarViewController.swift in Sources */,
+				EDBAB87E27D2438B00CF53AC /* ChatsViewController.swift in Sources */,
 				EDBAB86327D2415D00CF53AC /* SceneDelegate.swift in Sources */,
+				EDBAB88227D2439D00CF53AC /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
