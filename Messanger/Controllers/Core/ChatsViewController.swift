@@ -9,12 +9,6 @@ import UIKit
 
 class ChatsViewController: UIViewController {
     
-    private let createButton: UIBarButtonItem = {
-        let button = UIBarButtonItem(image: UIImage(systemName: "square.and.pencil"), style: .plain, target: self, action: nil)
-        button.tintColor = .secondaryLabel
-        return button
-    }()
-    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,7 +20,11 @@ class ChatsViewController: UIViewController {
     
     private func setupLayout() {
         view.backgroundColor = .systemBackground
-        navigationItem.rightBarButtonItem = createButton
+        navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(systemName: "square.and.pencil"), style: .plain, target: self, action: #selector(didTapped))
+    }
+    
+    @objc func didTapped() {
+        self.present(AddContactsViewController(), animated: true, completion: nil)
     }
 
     

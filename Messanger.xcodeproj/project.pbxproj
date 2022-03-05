@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		ED0E18D027D3C19F0073A1F5 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED0E18CF27D3C19F0073A1F5 /* LoginViewController.swift */; };
+		ED0E18D227D3FF7D0073A1F5 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED0E18D127D3FF7D0073A1F5 /* SignupViewController.swift */; };
+		ED0E18D627D403330073A1F5 /* TransitionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED0E18D527D403330073A1F5 /* TransitionManager.swift */; };
 		EDBAB86127D2415D00CF53AC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDBAB86027D2415D00CF53AC /* AppDelegate.swift */; };
 		EDBAB86327D2415D00CF53AC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDBAB86227D2415D00CF53AC /* SceneDelegate.swift */; };
 		EDBAB86A27D2415E00CF53AC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EDBAB86927D2415E00CF53AC /* Assets.xcassets */; };
@@ -14,9 +17,13 @@
 		EDBAB87E27D2438B00CF53AC /* ChatsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDBAB87D27D2438B00CF53AC /* ChatsViewController.swift */; };
 		EDBAB88027D2439200CF53AC /* FriendsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDBAB87F27D2439200CF53AC /* FriendsViewController.swift */; };
 		EDBAB88227D2439D00CF53AC /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDBAB88127D2439D00CF53AC /* SettingsViewController.swift */; };
+		EDBAB88627D28C2E00CF53AC /* AddContactsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDBAB88527D28C2E00CF53AC /* AddContactsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		ED0E18CF27D3C19F0073A1F5 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		ED0E18D127D3FF7D0073A1F5 /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
+		ED0E18D527D403330073A1F5 /* TransitionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransitionManager.swift; sourceTree = "<group>"; };
 		EDBAB85D27D2415D00CF53AC /* Messanger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Messanger.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDBAB86027D2415D00CF53AC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EDBAB86227D2415D00CF53AC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -26,6 +33,7 @@
 		EDBAB87D27D2438B00CF53AC /* ChatsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatsViewController.swift; sourceTree = "<group>"; };
 		EDBAB87F27D2439200CF53AC /* FriendsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsViewController.swift; sourceTree = "<group>"; };
 		EDBAB88127D2439D00CF53AC /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		EDBAB88527D28C2E00CF53AC /* AddContactsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddContactsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +88,7 @@
 		EDBAB87527D2429E00CF53AC /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				EDBAB88527D28C2E00CF53AC /* AddContactsViewController.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -94,6 +103,7 @@
 		EDBAB87727D242A900CF53AC /* Managers */ = {
 			isa = PBXGroup;
 			children = (
+				ED0E18D527D403330073A1F5 /* TransitionManager.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -122,6 +132,8 @@
 		EDBAB87A27D242D300CF53AC /* Auth */ = {
 			isa = PBXGroup;
 			children = (
+				ED0E18CF27D3C19F0073A1F5 /* LoginViewController.swift */,
+				ED0E18D127D3FF7D0073A1F5 /* SignupViewController.swift */,
 			);
 			path = Auth;
 			sourceTree = "<group>";
@@ -195,9 +207,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED0E18D227D3FF7D0073A1F5 /* SignupViewController.swift in Sources */,
 				EDBAB86127D2415D00CF53AC /* AppDelegate.swift in Sources */,
+				EDBAB88627D28C2E00CF53AC /* AddContactsViewController.swift in Sources */,
 				EDBAB88027D2439200CF53AC /* FriendsViewController.swift in Sources */,
 				EDBAB87C27D2437300CF53AC /* TabBarViewController.swift in Sources */,
+				ED0E18D027D3C19F0073A1F5 /* LoginViewController.swift in Sources */,
+				ED0E18D627D403330073A1F5 /* TransitionManager.swift in Sources */,
 				EDBAB87E27D2438B00CF53AC /* ChatsViewController.swift in Sources */,
 				EDBAB86327D2415D00CF53AC /* SceneDelegate.swift in Sources */,
 				EDBAB88227D2439D00CF53AC /* SettingsViewController.swift in Sources */,
