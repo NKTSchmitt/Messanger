@@ -18,6 +18,7 @@ class LoginViewController: UIViewController {
         textField.layer.borderColor = UIColor(named: "LightGray")?.cgColor
         textField.layer.borderWidth = 2
         textField.layer.cornerRadius = 5
+        textField.keyboardType = .emailAddress
         textField.textColor = UIColor(named: "Gray")
         return textField
     }()
@@ -31,6 +32,7 @@ class LoginViewController: UIViewController {
         textField.layer.borderColor = UIColor(named: "LightGray")?.cgColor
         textField.layer.borderWidth = 2
         textField.layer.cornerRadius = 5
+        textField.isSecureTextEntry = true
         textField.textColor = UIColor(named: "Gray")
         return textField
     }()
@@ -78,6 +80,7 @@ class LoginViewController: UIViewController {
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow), name: UIResponder.keyboardWillShowNotification, object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide), name: UIResponder.keyboardWillHideNotification, object: nil)
         
+        navigationController?.setNavigationBarHidden(true, animated: false)
         setupLayout()
     }
     
@@ -88,6 +91,7 @@ class LoginViewController: UIViewController {
             backgroundImage.image = UIImage(named: "background-login")
             backgroundImage.contentMode =  UIView.ContentMode.scaleAspectFill
             self.view.insertSubview(backgroundImage, at: 0)
+        
         
         //add subviews
         view.addSubview(emailTextField)
@@ -137,6 +141,14 @@ class LoginViewController: UIViewController {
         .lightContent
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+    }
+    
     @objc func keyboardWillShow(notification: NSNotification) {
         if let keyboardSize = (notification.userInfo?[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue)?.cgRectValue {
             if self.view.frame.origin.y == 0 {
@@ -177,6 +189,7 @@ class LoginViewController: UIViewController {
     
     @objc func signupButtonPressed() {
         let vc = SignupViewController()
-        presentDetail(vc)
+        navigationController?.pushViewController(vc, animated: true)
+        //presentDetail(vc)
     }
 }
